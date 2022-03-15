@@ -53,8 +53,6 @@ CREATE TABLE `clientes` (
     `data_horario_do_status` DATE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-*Utilizado date import wizard para importar os dados da tabelas em csv para o MySQL*
-
 ###### Requisito 1 - Criar query com todos os CNPJs, data de compra, e tempo de aprovação
 
 SELECT cnpj, DATE(pending_kyc) AS purchase_date, TIMEDIFF(approved, pending_kyc) AS approved_time
