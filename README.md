@@ -13,7 +13,6 @@ Os principais playes dentro de um fluxo de pagamento são adquirente, a bandeira
   5. Por fim a informação volta para o consumidor, e assim o lojista já pode preparar o pedido.
 
 
-
 **2 – Explain the difference between acquirer, sub-acquirer and payment gateway and how the flow explained in question 1 changes for these players.**
 
 A diferença entre adquirente, subadquirente, gateway pde pagamentos é:
@@ -25,12 +24,12 @@ O adquirente e subadquirente trabalham em conjunto na expansão de ofertas de me
 
   • Gateway de pagamento: Interface virtual que envia as informações para o adquirente. A diferença para o subadquirente é que funciona de forma integrada à página do e-commerce. Seu papel é processar os dados no momento em que a compra é finalizada.
 
+
 **3 – Explain what KYC (Know Your Customer) is and how it's important to the company and the entire payment industry.**
 
 A importância do KYC é para prevenção e segurança. É necessário entender a natureza das atividades e a legitimidade da renda do cliente para prevenir possíveis ilegalidades como lavagem de dinheiro, corrupção e etc. Isso protege tanto o negócio quanto o cliente.
 
 Esse processo de estudo do cliente, é utilizado no mundo inteiro e em diversos setores da economia, como no sistema de pagamentos e no mercado financeiro.
-
 
 
 ## **3.2 Get your hands dirty:**
@@ -50,6 +49,8 @@ CREATE TABLE `clientes` (
     `status` VARCHAR(100) NOT NULL,
     `data_horario_do_status` DATE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+*Utilizado date import wizard para importar os dados da tabelas em csv para o MySQL*
 
 ###### Requisito 1 - Criar query com todos os CNPJs, data de compra, e tempo de aprovação
 
