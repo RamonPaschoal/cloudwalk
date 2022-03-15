@@ -45,8 +45,6 @@ CREATE TABLE `clientes` (
     `nome_do_cliente` VARCHAR(100)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-# Utilizado date import wizard para importar os dados da tabelas em csv para o MySQL
-
 CREATE TABLE `clientes` (
 	`user_id` INT(20) NOT NULL PRIMARY KEY, 
     `status` VARCHAR(100) NOT NULL,
