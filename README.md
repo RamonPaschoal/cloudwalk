@@ -55,6 +55,7 @@ CREATE TABLE `clientes` (
 ###### Requisito 1 - Criar query com todos os CNPJs, data de compra, e tempo de aprovação
 
 SELECT cnpj, DATE(pending_kyc) AS purchase_date, TIMEDIFF(approved, pending_kyc) AS approved_time
+
 FROM (SELECT c.user_id, c.cnpj, s.data_horario_do_status AS approved, s1.data_horario_do_status AS pending_kyc FROM clientes AS c
 INNER JOIN `status` AS s
 ON s.user_id = c.user_id AND s.`status` = 'approved'
