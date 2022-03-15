@@ -34,7 +34,7 @@ Esse processo de estudo do cliente, é utilizado no mundo inteiro e em diversos 
 
 ## **3.2 Get your hands dirty:**
 
-**CREATE DATABASE cloudwalk;**  
+CREATE DATABASE cloudwalk;  
   
 USE cloudwalk;  
   
